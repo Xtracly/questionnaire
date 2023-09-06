@@ -1,0 +1,570 @@
+body {
+    background-color: #101113; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__menu {
+    background-color: #1E1E1E;
+}
+
+.header__path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+}
+.header__logo {
+    font-family: 'Righteous', cursive;
+    font-size: 45px; 
+    font-weight: 400; 
+    color: #fff; 
+}
+
+.header__logo span {
+    color: #A6A001; 
+}
+
+.nav-list {
+    display: flex;
+    gap: 47px;
+}
+.nav-list__item {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px; 
+    font-weight: 400; 
+}
+
+.nav-list__link {
+    color: #fff;
+}
+
+.header__sign {
+    position: relative;
+}
+.button {
+    font-size: 18px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.button::before {
+    content: url(../img/Ellipse.svg);
+    position: absolute;
+    z-index: -1;
+    left: -16px;
+    top: -9px;
+}
+
+.button::after {
+    content: url(../img/Frame.svg);
+    position: absolute;
+    right: -25px;
+    bottom: -4px;
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+}
+
+.header__inner {
+    position: relative;
+}
+
+.header__inner::after {
+    content: "UI Design";
+    position: absolute;
+    width: 107px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.80);
+    top: -64px;
+    left: 612px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1A1B1D; 
+    font-size: 14px;
+    font-weight: 400; 
+    font-family: 'Syne', sans-serif;
+}
+
+.header__inner::before {
+    content: "Web Design";
+    position: absolute;
+    width: 107px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.80);
+    top: 24px;
+    left: 1082px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1A1B1D; 
+    font-size: 14px;
+    font-weight: 400; 
+    font-family: 'Syne', sans-serif;
+}
+
+.header__paragraph {
+    padding-bottom: 33px;
+}
+.header__mini-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.header__link {
+    padding-bottom: 33px;
+}
+.header__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 66px;
+    font-weight: 700; 
+    color: #fff;
+}
+
+.header__title span {
+    color: #A6A001; 
+}
+
+.header__desc {
+    padding-bottom: 33px;
+}
+.header__text {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header__image {
+    z-index: 1;
+}
+
+.header__image::after {
+    content: "";
+    width: 284px;
+    height: 284px;
+    border-radius: 50%; /* Встановлюємо радіус для створення еліпса */
+    background:  #A6A001 50% / cover no-repeat; /* Додаємо фонове зображення і стилізуємо його */
+    filter: blur(140px); /* Застосовуємо розмиття */
+    position: absolute;
+    top: 390px;
+    left: 860px;
+    z-index: -1;
+}
+
+.header__people {
+    padding-left: 29px;
+    position: relative; /* Встановлюємо позицію батьківського елемента на relative */
+}
+
+.treadmill {
+    background-color: #1E1E1E;
+    padding: 30px 0px;
+}
+
+.treadmill__inner {
+    overflow: hidden; /* Приховати вміст, який виходить за межі .treadmill__inner */
+}
+
+.treadmill__main {
+    display: flex; /* Встановити властивість display на flex для додавання картинок в один рядок */
+    animation: moveRight 10s linear infinite; /* Застосувати анімацію з іменем moveRight */
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Початкова позиція - картинки зовсім ліворуч */
+    }
+    100% {
+        transform: translateX(100%); /* Кінцева позиція - картинки зовсім праворуч */
+    }
+}
+
+/* Опціонально: стилізуємо зображення, щоб вони відображалися біля одна одної */
+.treadmill__main img {
+    margin-right: 80px; /* Додати відступ між картинками (за бажанням) */
+}
+
+.advantage {
+    padding-top: 120px;
+}
+
+.advantage__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.advantage__list {
+    background-color: #1E1E1E;
+    border: 1px solid #1E1E1E; 
+    border-radius: 20px;
+    padding: 30px 30px 50px 30px;
+}
+.advantage__picture {
+    padding-bottom: 115px;
+}
+.advantage__path {
+    padding-bottom: 30px;
+}
+.advantage__title {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.advantage__text {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #acacac;
+}
+
+.section__title {
+    display: flex;
+    justify-content: center;
+    color: #A6A001; 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 120px;
+}
+.portfolio__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1E1E1E; 
+    width: 1018px;
+    height: 60px;
+    transform: translate(9.2%, 3%);
+    margin-top: 70px;
+}
+
+.portfolio__tabs {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 25px 15px 25px;
+}
+
+.portfolio__tabs:hover {
+    background-color: #A6A001;
+    border-radius: 12px; 
+    overflow: hidden;
+    color: #1E1E1E; 
+}
+
+.portfolio__picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 74px;
+}
+
+.portfolio__image-01,
+.portfolio__image-02,
+.portfolio__image-03,
+.portfolio__image-04,
+.portfolio__image-05,
+.portfolio__image-06 {
+    position: relative;
+}
+.portfolio__image-01::before {
+    content: "Website Designing";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 320px;
+    left: 18px;
+}
+.portfolio__image-02::before {
+    content: "UXUI - Graphic Designing";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 282px;
+    left: 18px;
+}
+.portfolio__image-03::before {
+    content: "Web Development";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 292px;
+    left: 18px;
+}
+.portfolio__image-04::before {
+    content: "Eousva - Product Branding";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 320px;
+    left: 18px;
+}
+.portfolio__image-05::before {
+    content: "Social Media";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 320px;
+    left: 18px;
+}
+.portfolio__image-06::before {
+    content: "Product - Design";
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize; 
+    position: absolute;
+    top: 320px;
+    left: 18px;
+}
+
+.picture_01,
+.picture_02,
+.picture_03,
+.picture_04,
+.picture_05,
+.picture_06 {
+    object-fit: cover;
+}
+
+.portfolio__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.reviews__content {
+    display: flex;
+    justify-content: center;
+    gap: 103px;
+    margin-top: 80px;
+    background-color: #1E1E1E;
+}
+.reviews__people {
+    padding-top: 144px;
+}
+.reviews__name {
+    padding-bottom: 25px;
+}
+.reviews__title {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.reviews__text {
+    font-family: 'Syne', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #a9a9a9;
+    position: relative;
+}
+
+.reviews__text::after {
+    content: url(../img/quotes.svg);
+    position: absolute;
+    left: 425px;
+    top: 145px;
+}
+
+.reviews__picture {
+    margin-top: 71px;
+    margin-bottom: 50px;
+}
+.blogs__main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 80px;
+}
+.blogs__content {
+    flex: 1;
+}
+
+.blogs__picture img {
+    margin-bottom: 20px;
+}
+.blogs__name {
+    padding-bottom: 26px;
+}
+.blogs__title {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}
+.blogs__desc {
+    padding-bottom: 120px;
+}
+.blogs__text {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c5bebe;
+}
+
+.footer {
+    background-color: #1E1E1E;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 62px;
+}
+
+.footer__about-desc {
+    padding-top: 20px;
+}
+
+.footer__about-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 33px;
+}
+
+.footer__about-phone {
+    padding-bottom: 18px;
+}
+
+.footer-phone__link {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer-phone__link::before {
+    content: url(../img/Phone.svg);
+    padding-right: 12px;
+}
+
+.footer-sms__link {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer-sms__link::before {
+    content: url(../img/SMS.svg);
+    padding-right: 12px;
+}
+
+.footer__info {
+    display: flex;
+    gap: 135px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__pages-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.footer__pages-item {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.footer__pages-link {
+    color: #fff;
+}
+
+.footer__services-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.footer__services-item {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.footer__services-link {
+    color: #fff;
+}
+
+.footer__form-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer__form-country {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #1E1E1E;
+    color: white;
+    border-bottom: 1px solid #3E3E3E;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    appearance: none;
+}
+.footer__form-region {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #1E1E1E;
+    color: white;
+    border-bottom: 1px solid #3E3E3E;
+    padding-bottom: 10px;
+    appearance: none;
+}
